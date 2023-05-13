@@ -1,0 +1,222 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,900&family=Poppins:wght@500&family=Work+Sans:wght@300&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: .2s linear;
+}
+.nav-bar{
+    display: flex;
+}
+.prev-page >a{
+    padding: 10px;
+    border-radius: 40px;
+}
+.prev-page a:hover{
+    background-color: rgba(76, 175, 80, 0.3);
+    transform: scale(1.5);
+}
+.nav-bar .prev-page{
+    padding-top: 13px;
+    padding-left: 16px;
+    padding-right: 23px;
+}
+.nav-bar .heading{
+    width: 100%;
+    text-align: center;
+}
+.f-item{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    gap: 15px;
+    padding: 10px 9%;
+    padding-bottom: 100px;
+}
+.ex-item{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    gap: 15px;
+    padding: 10px 9%;
+    padding-bottom: 100px; 
+}
+.p-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    gap: 15px;
+    padding: 10px 9%;
+    padding-bottom: 100px; 
+}
+.pod-member{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 19px;
+padding: 10px 20px;
+padding-bottom: 90px;
+    
+}
+.container{
+    padding: 10px 9%;
+    padding-bottom: 100px;
+}
+h1{
+    text-align: center;
+    padding-bottom: 10px;
+    color: blueviolet;
+    text-shadow: 0 5px 10px black;
+    font-size: 50px;
+    /* border-left: 5px solid black; */
+}
+.container {
+     display: grid;
+     grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+     gap: 15px;
+}
+/* .container */
+ .items{
+    box-shadow: 0 5px 10px black;
+    border-radius: 5px;
+    background: rgb(196, 200, 255);
+    text-align: center;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+    height: 363px;
+}
+.items .imgbox{
+    position: relative;
+
+}
+
+.imgbox img{
+    width: 100%;
+    
+    transition: 2s;
+}
+.items:hover .imgbox img{
+    transform: scale(1.5);
+    opacity: 0.6;
+   
+}
+/* .container */
+ .items .details{
+    position: absolute;
+    bottom: -105px;
+    left: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    background: rgba(76, 175, 80, 0.3);
+    width: 100%;
+    transition: .5s;
+    z-index: 2;
+}
+/* .container */
+ .items:hover .details{
+    bottom: 0;
+}
+
+.items .details h3{
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-weight: 700;
+    text-align: right;
+    text-transform: uppercase;
+}
+.items .details ul{
+   margin: 0;padding: 0;
+   display: flex;
+   justify-content: right;
+}
+.items .details ul li{
+    list-style: none;
+}
+.items .details ul li a{
+    padding: 0 10px;
+}
+.items .details ul li a fa-brands{
+    transition: .4s;
+}
+.items .details ul li a:hover fa-brands{
+    transform: rotate(360deg);
+}
+
+/* footer design */
+footer{
+    background-color: blueviolet;
+    display: flex;
+   justify-content: space-between;
+   height: 100px;
+   align-items: center;
+}
+footer .handels{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 50%;
+    overflow: hidden;
+}
+footer .cr{
+    width: 50%;
+    text-align: center;
+    color: aliceblue;
+}
+.handels >li{
+    padding: 18px;
+}
+@media (max-width:1000px) {
+    .pod-member{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (max-width:700px) {
+    .pod-member{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:400px) {
+    .pod-member{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+
+
+
+
+
+
+
+
+/* //events css */
+.eve-section{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+.eve-section p {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+}
+.image {
+    width:40%;
+   
+}
+img {
+    width:100%;
+    height:100%;
+}
+@media (max-width:800px){
+    .eve-section{
+        flex-direction: column;
+        align-items: center;
+    }
+    .eve-section p {
+        width: 100%;
+    }
+}
